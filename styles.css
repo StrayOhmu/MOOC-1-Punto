@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(11, 50px);
+    gap: 0; /* Remove gap to ensure borders are consistent */
+    margin: 0 auto;
+    border: 5px solid black; /* Thicker border for the outer grid */
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box; /* Include border in the element's total width and height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center {
+    background-color: white;
+}
+
+.near-center {
+    background-color: lightgray;
+}
+
+#current-player {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: red;
+}
